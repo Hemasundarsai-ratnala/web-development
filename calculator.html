@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    #main{
+        display: block;
+        justify-content: center;
+        gap: 10px;
+        width: 337px;
+        margin: auto;
+        height: auto;
+        border:2px solid black;
+        border-radius: 5px;
+    }
+    div{
+        width: 333px;
+        height: 40px;
+        border:2px solid black;
+    }
+    input{
+        margin: auto;
+        width: 325px;
+        height: 35px;
+        font-size: 30px;
+    }
+    td{
+        justify-content: center;
+        
+    }
+</style>
+</head>
+<body align="center">
+    <h1 >&nbsp;&nbsp;Calculator</h1>
+    <div id="main" >
+        <div>
+        <input type="text" id="screen"></div>
+    <table style="background-color: black;cell: spacing 20px;">
+        <tr>
+        <td><button onclick="cal('1')">1</button></td>
+        <td><button onclick="cal('2')">2</button></td>
+        <td><button onclick="cal('3')">3</button></td>
+        <td><button onclick="cal('+')">+</button></td>
+        </tr>
+        <tr>
+        <td><button onclick="cal('4')">4</button></td>
+        <td><button onclick="cal('5')">5</button></td>
+        <td><button onclick="cal('6')">6</button></td>
+        <td><button onclick="cal('-')">-</button></td>
+        </tr>
+        <tr>
+        <td><button onclick="cal('7')">7</button></td>
+        <td><button onclick="cal('8')">8</button></td>
+        <td><button onclick="cal('9')">9</button></td>
+        <td><button onclick="cal('*')">x</button></td>
+        </tr>
+        <tr>
+        <td><button onclick="cal('C')">C</button></td>
+        <td><button onclick="cal('0')">0</button></td>
+        <td><button onclick="cal('=')">=</button></td>
+        <td><button onclick="cal('/')">/</button></td>
+        </tr>
+        </table>
+    </div>
+</body>
+<script>
+    let a="";
+    let b="";
+    function cal(x){
+        if (x=="="){
+            document.getElementById("screen").value=eval(a);
+            a="";
+            b=a;
+
+        }
+        else if(x=="C"){
+            document.getElementById("screen").value="";
+            a="";
+            b=""
+        }
+        else{
+            a+=x;
+            if(x=='*'){
+                b+="x";
+            }
+            else{
+                b+=x;
+            }
+            document.getElementById("screen").value=b;
+
+        }
+        
+
+        }
+    
+</script>
+</html>
