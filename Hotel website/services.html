@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Enjoy Feast Hotel</title>
+  <!-- Bootstrap & FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #000000e6;
+      padding: 15px 0;
+      justify-content: center;
+    }
+
+    .navbar-brand {
+      color: white !important;
+      font-size: 24px;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 15px;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .carousel-inner {
+      border-radius: 15px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: black;
+      border-radius: 50%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar">
+    <span class="navbar-brand" >Enjoy Feast Hotel</span>
+  </nav>
+
+  <!-- Section Title -->
+  <div class="container">
+    <h2 class="section-title mt-4"><i class="fas fa-concierge-bell"></i> Our Services</h2>
+
+    <!-- Carousel -->
+    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Swimming Pool -->
+        <div class="carousel-item active">
+          <img src="pool.jpg" class="d-block w-100" alt="Swimming Pool">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>🏊 Swimming Pool</h3>
+            <p>Relax and rejuvenate in our clean and refreshing outdoor pool area, open from 6 AM to 10 PM.</p>
+          </div>
+        </div>
+
+        <!-- Bar -->
+        <div class="carousel-item">
+          <img src="bar.jpg" class="d-block w-100" alt="Bar">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>🍸 Bar Lounge</h3>
+            <p>Unwind with a variety of premium drinks, mocktails, and cocktails in our ambient rooftop bar.</p>
+          </div>
+        </div>
+
+        <!-- Restaurant -->
+        <div class="carousel-item">
+          <img src="restaurant.jpg" class="d-block w-100" alt="Restaurant">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>🍽️ Multi-Cuisine Restaurant</h3>
+            <p>Enjoy delicious local and international dishes, freshly prepared by top chefs.</p>
+          </div>
+        </div>
+
+        <!-- Parking -->
+        <div class="carousel-item">
+          <img src="parking.jpg" class="d-block w-100" alt="Parking">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>🚗 Secure Parking</h3>
+            <p>We offer 24x7 CCTV-monitored parking space for your vehicles with valet service available.</p>
+          </div>
+        </div>
+
+       
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

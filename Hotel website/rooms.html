@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    .room-details {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+      background: #f9f9f9;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      display: block;
+      margin: 5px 0;
+      background-color: #007bff;
+      color: white;
+      padding: 8px;
+      cursor: pointer;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    #deluxe:checked ~ .deluxe-details,
+    #executive:checked ~ .executive-details,
+    #suite:checked ~ .suite-details {
+      display: block;
+    }
+  </style>
+</head>
+<body  style="background-image: url('resort.jpg');background-repeat:no-repeat;background-size:cover;">
+   <h1 align="center"><b><u>Enjoy Feast Hotel </u></h1></b>
+   <h2 align="center"><b><u>Room at Enjoy Feast Hotel  </u></h2></b>
+   <p ><h3 align="center"> At Enjoy Feast Hotel, we provide well-appointed rooms that combine style and functionality.<br> Every room features modern amenities including air-conditioning, free Wi-Fi, LED TV,<br> premium bedding, 24-hour room service, and a clean, well-equipped bathroom. <br> </p></h3>
+   <p><h2 align="center">We are providing three categories of rooms:</h2></p>
+   <h2>Select a Room Type:</h2>
+
+  <input type="radio" name="room" id="deluxe">
+  <label for="deluxe">Deluxe Room</label>
+
+  <input type="radio" name="room" id="executive">
+  <label for="executive">Executive Room</label>
+
+  <input type="radio" name="room" id="suite">
+  <label for="suite">Suite</label>
+
+  
+  <div class="room-details deluxe-details">
+    <h3>Deluxe Room</h3>
+    <p>Spacious room with king-sized bed, city view, free Wi-Fi, minibar, and ensuite bathroom.</p>
+    <img 
+  src="deluxeroom.jpg"
+  srcset="deluxeroom.jpg 500w, deluxeroom.jpg 1000w, deluxeroom.jpg 1500w"
+  alt="Scenic view">
+  <img 
+  src="deluxeroom1.jpg"
+  srcset="deluxeroom1.jpg 500w, deluxeroom1.jpg 1000w, deluxeroom1.jpg 1500w"
+  alt="Scenic view">
+  <img 
+  src="deluxeroom2.jpg"
+  srcset="deluxeroom2.jpg 500w, deluxeroom2.jpg 1000w, deluxeroom2.jpg 1500w"
+  alt="Scenic view">
+  <img
+  src="deluxeroom3.jpg"
+  srcset="deluxeroom3.jpg 500w, deluxeroom3.jpg 1000w, deluxeroom3.jpg 1500w"
+  alt="Scenic view">
+
+  </div>
+  <div class="room-details executive-details">
+    <h3>Executive Room</h3>
+    <p>Includes all Deluxe features plus access to Executive Lounge, free breakfast, and airport transfer.</p>
+    <img 
+  src="Executiveroom.jpg"
+  srcset="Executiveroom.jpg 500w, Executiveroom.jpg 1000w, Executiveroom.jpg 1500w"
+  alt="Scenic view">
+  <img 
+  src="Executiveroom1.jpg"
+  srcset="Executiveroom1.jpg 500w, Executiveroom1.jpg 1000w, Executiveroom1.jpg 1500w"
+  alt="Scenic view">
+  <img 
+  src="Executiveroom2.jpg"
+  srcset="Executiveroom2.jpg 500w, Executiveroom2.jpg 1000w, Executiveroom2.jpg 1500w"
+  alt="Scenic view">
+  <img
+  src="Executiveroom3.jpg"
+  srcset="Executiveroom3.jpg 500w, Executiveroom3.jpg 1000w, Executiveroom3.jpg 1500w"
+  alt="Scenic view">
+  </div>
+
+  <div class="room-details suite-details">
+    <h3>Suite</h3>
+    <p>Luxury suite with separate living area, jacuzzi, personal butler service, and exclusive amenities.</p>
+    <img 
+  src="Suiteroom.jpg"
+  srcset="Suiteroom.jpg 500w, Suiteroom.jpg 1000w, Suiteroom.jpg 1500w"
+  alt="Scenic view">
+  <img 
+  src="Suiteroom1.jpg"
+  srcset="Suiteroom1.jpg 500w,Suiteroom1.jpg 1000w, Suiteroom1.jpg 1500w"
+  alt="Scenic view">
+  <img Suiteroom2.jpg"
+  srcset="Suiteroom2.jpg 500w, Suiteroom2.jpg 1000w, Suiteroom2.jpg 1500w"
+  alt="Scenic view">
+  <img
+  src=Suiteroom3.jpg"
+  srcset="Suiteroom3.jpg 500w, Suiteroom3.jpg 1000w, Suiteroom3.jpg 1500w"
+  alt="Scenic view">
+  </div>    
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+<style>
+    fieldset{
+        margin: auto;
+        width: 320px;
+        height: auto;
+        background-color:rgb(15, 134, 238);
+    }
+    button{
+        align-items: center;
+    }
+</style>
+</head>
+<body >
+    <form onsubmit="return validateForm()" >
+        <fieldset><b>
+            <legend align="center">REGISTRATION FORM</legend><br>
+            <label for="" >Name <span style="color: red;">*</span>:</label>
+            <input type="text" name="" id="" placeholder="First name" autofocus required><br><br>
+            <label>Number <span style="color: red;">*</span>:</label>
+            <input type="text" id="phno" placeholder="Phone number">
+            <span id="phnoError" style="color:red"></span><br><br>
+            <label>E-mail <span style="color: red;">*</span>:</label>
+            <input type="email" id="email" placeholder="Mail id">
+            <span id="emailError" style="color:red"></span><br><br>
+            <label>Password :</label>
+            <input type="password" id="password" placeholder="Password">
+            <span id="passError" style="color:red"></span><br><br>
+            <label for="">Gender :</label>
+            <label for="">Male</label>
+            <input type="radio" name="h" id="">
+            <label for="">Female</label>
+            <input type="radio" name="h" id="">
+            <label for="">Other</label>
+            <input type="radio" name="h" id=""><br><br>
+            <label for="">Date of Birth :</label>
+            <input type="date" name="" id=""><br><br>
+            <label for="Address" >Address <span style="color: red;">*</span>:</label>
+            <textarea id="Address" name="Address" cols="50" rows="2" required></textarea>
+            <label for="">Person's Role :</label>
+            <select name="" id="">
+                <option value="Customer">Customer</option>
+                <option value="Staff">Staff</option>
+                <option value="Chef">Chef</option>
+            </select><br><br>
+            <label for=""><input type="checkbox" name="" id=""> Terms and Conditions</label><br><br>
+            </b>
+            <p align="center"><button type="submit">Submit</button></p>
+        </fieldset>
+    </form>
+</body>
+<script>
+    function validateForm() {
+        let isValid = true;
+
+        const phno = document.getElementById("phno").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        const phnoError = document.getElementById("phnoError");
+        const emailError = document.getElementById("emailError");
+        const passError = document.getElementById("passError");
+
+        
+        phnoError.innerText = "";
+        emailError.innerText = "";
+        passError.innerText = "";
+
+        // Phone number validation (10 digits)
+        const phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(phno)) {
+            phnoError.innerText = "\nEnter a valid 10-digit phone number";
+            isValid = false;
+        }
+
+        // Email validation
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+        if (!emailPattern.test(email)) {
+            emailError.innerText = "\nEnter a valid email address";
+            isValid = false;
+        }
+
+        
+        // Password validation
+        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]{6,}$/;
+        if (!passwordPattern.test(password)) {
+            passError.innerText = "\nPassword must include uppercase, lowercase, number & special character";
+            isValid = false;
+        }
+
+
+        return isValid;
+    }
+    
+</script>
+</html>
