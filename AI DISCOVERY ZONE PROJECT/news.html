@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-News</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-image: url('files/ainews1.png');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed ;
+            font-family: Arial, sans-serif;
+        }
+         h1 {
+      text-align: center;
+      padding: 20px 0;
+      color: #089fd2;
+    }
+
+      .news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; 
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+    
+
+    .news-card {
+      width: 90%;
+      background: #ffffffb4;
+      border-left: 6px solid #00bcd4;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+      margin-bottom: 30px;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card h3 {
+      color: #007c91;
+      margin: 0 0 10px;
+    }
+
+    .news-card p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .news-card a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .news-card a:hover {
+      text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="color: black;">Welcome To AI-NEWS</h1>
+    <div class="scroll-container">
+
+  <!-- 1 -->
+  <div class="news-card">
+    <h3>AI Beats Human in Math Olympiad</h3>
+    <p>DeepMind's AI outperformed top human contestants in symbolic math.<br>
+    This marks a breakthrough in AI reasoning ability.<br>
+    Solved Olympiad-level problems with speed and accuracy.<br>
+    Utilized new transformer-logic hybrid architecture.<br>
+    May reshape STEM education & automation.<br>
+    <a href="https://www.newscientist.com/article/ai-math-deepmind/" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 2 -->
+  <div class="news-card">
+    <h3>OpenAI Launches GPT-5 Preview</h3>
+    <p>GPT-5 supports vision, voice, and memory capabilities.<br>
+    Handles video inputs and complex planning tasks.<br>
+    Introduces persistent long-term memory support.<br>
+    Early access granted to researchers and partners.<br>
+    Focus on safer, more aligned AI.<br>
+    <a href="https://openai.com/blog" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 3 -->
+  <div class="news-card">
+    <h3>AI Voice Scam Warning</h3>
+    <p>FBI warns about AI-generated voice frauds on the rise.<br>
+    Deepfakes used in scam calls to mimic relatives and bosses.<br>
+    Public urged to use multi-layer verification.<br>
+    Voice cloning accessible to anyone now.<br>
+    Ethical AI laws gaining traction globally.<br>
+    <a href="https://www.cnn.com/2025/06/ai-voice-fraud-warning" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 4 -->
+  <div class="news-card">
+    <h3>Google’s Gemini 2 Launches</h3>
+    <p>Gemini 2 AI model released with multimodal features.<br>
+    Understands video, text, and audio seamlessly.<br>
+    Beats GPT-4 in factual consistency benchmarks.<br>
+    Now integrated into Google Search and Workspace.<br>
+    A major leap in user personalization.<br>
+    <a href="https://blog.google/technology/ai/google-gemini-2-launch/" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 5 -->
+  <div class="news-card">
+    <h3>Adobe Adds AI to Photoshop</h3>
+    <p>Photoshop now supports text-to-image generation.<br>
+    Firefly AI integrated directly in editing panel.<br>
+    Users can generate, expand, and remix images instantly.<br>
+    Copyright-free generation enabled.<br>
+    Revolutionizing creative workflows.<br>
+    <a href="https://www.adobe.com/sensei/generative-ai.html" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 6 -->
+  <div class="news-card">
+    <h3>AI Finds New Antibiotics</h3>
+    <p>MIT researchers use AI to discover novel antibiotics.<br>
+    System scanned millions of molecules in days.<br>
+    Found compound kills superbugs like MRSA.<br>
+    First practical success in AI-led drug design.<br>
+    Clinical trials expected soon.<br>
+    <a href="https://news.mit.edu/2025/ai-finds-new-antibiotic-0601" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 7 -->
+  <div class="news-card">
+    <h3>Meta’s Llama 3 Released</h3>
+    <p>Meta launches LLaMA 3 for open-source AI applications.<br>
+    Models available with 8B to 65B parameters.<br>
+    Trained on clean, diverse datasets.<br>
+    Outperforms other open models in accuracy.<br>
+    Available under permissive license.<br>
+    <a href="https://ai.meta.com/blog/meta-llama-3-open-source" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 8 -->
+  <div class="news-card">
+    <h3>AI Tracks Deforestation in Real Time</h3>
+    <p>NASA & Microsoft use AI to monitor forests globally.<br>
+    Alerts generated in near real-time from satellite data.<br>
+    Helps conservationists respond faster.<br>
+    Supports Amazon and SE Asia tracking.<br>
+    Open platform available via Planet AI.<br>
+    <a href="https://blogs.microsoft.com/ai/forests" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 9 -->
+  <div class="news-card">
+    <h3>AI Avatars Take Over Customer Support</h3>
+    <p>Many companies replacing chat support with AI avatars.<br>
+    Synthesia and Soul Machines lead the market.<br>
+    Real-time facial expressions boost user trust.<br>
+    Cuts costs by up to 70%.<br>
+    Raises concerns on empathy and ethics.<br>
+    <a href="https://techcrunch.com/2025/06/ai-avatar-customer-support/" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 10 -->
+  <div class="news-card">
+    <h3>AI Detects Alzheimer’s Early</h3>
+    <p>AI model predicts Alzheimer’s up to 7 years in advance.<br>
+    Trained on speech patterns and MRI scans.<br>
+    Outperforms traditional diagnostic methods.<br>
+    Being tested in major hospitals.<br>
+    Hope for early intervention and care.<br>
+    <a href="https://www.nature.com/articles/ai-alzheimers-2025" target="_blank">See More</a></p>
+  </div>
+
+    <!-- 11 -->
+  <div class="news-card">
+    <h3>AI-Powered Teachers Enter Classrooms</h3>
+    <p>Schools in South Korea and Japan pilot AI teachers.<br>
+    Lessons delivered using interactive avatars and voice AI.<br>
+    Tracks students’ learning progress and adapts in real-time.<br>
+    Frees up human teachers for 1-on-1 guidance.<br>
+    Raises questions on teacher replacement.<br>
+    <a href="https://www.bbc.com/news/technology-ai-classroom" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 12 -->
+  <div class="news-card">
+    <h3>AI Music Copyright Laws Under Debate</h3>
+    <p>Generated music now faces copyright regulations globally.<br>
+    Artists push back against AI mimicry of voices/styles.<br>
+    EU proposes watermarking AI-generated music.<br>
+    Spotify removes 10,000+ fake AI tracks.<br>
+    Legal frameworks still catching up.<br>
+    <a href="https://www.reuters.com/technology/music-copyright-ai-2025" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 13 -->
+  <div class="news-card">
+    <h3>AI Predicts Stock Market with 70% Accuracy</h3>
+    <p>New fintech AI tool claims 70% trend prediction rate.<br>
+    Trained on 20 years of market sentiment and signals.<br>
+    Investors use it to guide midterm decisions.<br>
+    Experts advise caution: "No model is perfect."<br>
+    Might disrupt human trading strategies.<br>
+    <a href="https://www.bloomberg.com/news/articles/ai-stock-prediction" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 14 -->
+  <div class="news-card">
+    <h3>OpenAI Sora Revolutionizes Video Creation</h3>
+    <p>Sora allows full video generation from text prompts.<br>
+    Supports complex transitions and consistent characters.<br>
+    Creative industries embracing it rapidly.<br>
+    Raises questions on misinformation risks.<br>
+    Content guidelines being developed.<br>
+    <a href="https://openai.com/sora" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 15 -->
+  <div class="news-card">
+    <h3>AI Learns to Write Code from Natural Language</h3>
+    <p>New AI by Google writes full-stack apps from voice commands.<br>
+    Converts plain English into React + Node.js code.<br>
+    Designed for non-coders and entrepreneurs.<br>
+    May boost rapid prototyping speed.<br>
+    Early access in limited beta.<br>
+    <a href="https://developers.googleblog.com/ai-coding-2025" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 16 -->
+  <div class="news-card">
+    <h3>Autonomous AI Agents Launch on Web</h3>
+    <p>“AutoGPTs” now roam the internet performing tasks solo.<br>
+    AI agents shop, book tickets, and even hire freelancers.<br>
+    Requires careful guardrails to avoid misuse.<br>
+    Used by businesses for automation chains.<br>
+    GitHub projects like BabyAGI growing fast.<br>
+    <a href="https://venturebeat.com/ai/autogpt-update-2025" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 17 -->
+  <div class="news-card">
+    <h3>AI Passes Bar Exam with Top Scores</h3>
+    <p>New legal AI scored in top 10% of US bar exam takers.<br>
+    Model trained on case law, statutes, and legal writing.<br>
+    Assists lawyers with research and draft briefs.<br>
+    Not approved to practice law yet.<br>
+    Raises debates on law automation.<br>
+    <a href="https://www.law.com/ai-passes-bar-exam-2025" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 18 -->
+  <div class="news-card">
+    <h3>AI Detects Emotions in Text and Speech</h3>
+    <p>Startups launch emotion-detection APIs for developers.<br>
+    Analyze emails, calls, or chats to assess tone/mood.<br>
+    Used in HR, marketing, and therapy tools.<br>
+    Privacy concerns raised about deep emotional profiling.<br>
+    Ethical review under way globally.<br>
+    <a href="https://www.technologyreview.com/ai-emotion-sensing-2025" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 19 -->
+  <div class="news-card">
+    <h3>AI Recreates Ancient Languages</h3>
+    <p>MIT AI reconstructs lost languages using machine learning.<br>
+    Identified phonetic roots of unknown dialects.<br>
+    Tools aid archaeologists in script deciphering.<br>
+    Currently works on Greek, Ugaritic, and Mayan.<br>
+    May expand to Indus Valley script soon.<br>
+    <a href="https://www.sciencedaily.com/ai-languages" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 20 -->
+  <div class="news-card">
+    <h3>AI Chips Dominate Hardware Market</h3>
+    <p>NVIDIA, AMD, and Google dominate AI chip supply in 2025.<br>
+    Demand skyrockets for transformer-optimized GPUs.<br>
+    3nm chips enable faster LLM inference.<br>
+    Chip wars intensify in Asia and US.<br>
+    Governments investing in local fabs.<br>
+    <a href="https://www.wsj.com/articles/ai-chips-market-2025" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 21 -->
+  <div class="news-card">
+    <h3>AI Turns Sketches into 3D Models</h3>
+    <p>New tool converts pencil sketches into AR-ready 3D forms.<br>
+    Used in gaming, architecture, and fashion design.<br>
+    Allows faster prototyping and ideation.<br>
+    Works on tablets and phones.<br>
+    Powered by diffusion models.<br>
+    <a href="https://www.wired.com/story/ai-3d-sketches" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 22 -->
+  <div class="news-card">
+    <h3>AI Used to Combat Misinformation in 2025 Elections</h3>
+    <p>Election boards partner with AI firms to detect deepfakes.<br>
+    Tools flag manipulated videos and text across social media.<br>
+    Proactively removes false information.<br>
+    Civil rights advocates urge caution.<br>
+    May set global precedent for 2026 elections.<br>
+    <a href="https://www.nytimes.com/2025/05/ai-election-safety.html" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 23 -->
+  <div class="news-card">
+    <h3>AI Translates in Real-Time for Travelers</h3>
+    <p>Wearables powered by AI translate speech instantly.<br>
+    Travelers can talk across languages in real-time.<br>
+    Built-in Whisper and DeepL tech.<br>
+    Used in hotels and airports worldwide.<br>
+    Makes cross-cultural travel seamless.<br>
+    <a href="https://www.theverge.com/ai-translation-wearables" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 24 -->
+  <div class="news-card">
+    <h3>India to Launch National AI Hub</h3>
+    <p>Government of India invests ₹10,000 Cr in AI research.<br>
+    Focus on healthcare, agriculture, and multilingual tech.<br>
+    Partnership with IITs and private startups.<br>
+    Open datasets and sandbox support promised.<br>
+    Launching July 2025.<br>
+    <a href="https://www.meity.gov.in/news/national-ai-mission" target="_blank">See More</a></p>
+  </div>
+
+  <!-- 25 -->
+  <div class="news-card">
+    <h3>AI-Generated Movies Enter Film Festivals</h3>
+    <p>Sundance and Cannes accept AI-written films this year.<br>
+    Scripts, actors, and editing all AI-generated.<br>
+    Raises philosophical questions on creativity.<br>
+    Critics are both amazed and alarmed.<br>
+    Industry slowly embracing hybrid creation.<br>
+    <a href="https://www.hollywoodreporter.com/ai-movie-entries-2025" target="_blank">See More</a></p>
+  </div>
+
+</div>
+
+
+</body>
+</html>

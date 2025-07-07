@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Concepts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-image: url('files/aiconcepts1.png');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed ;
+            justify-content: center;
+        }
+        .mt-4{
+            color: white;
+            background-color: #00000087;
+        }
+        .carousel-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+        .carousel-item img {
+                height: 80vh;
+                object-fit: cover;
+    }
+        .carousel-caption {
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 25px;
+                border-radius: 15px;
+                text-shadow: 1px 1px 3px #000;
+}
+
+        .carousel h1 {
+            color: #00ccff;
+}
+
+        .carousel h5 {
+            color: #ffee00;
+        }
+
+        .carousel p {
+            color: #ffffff;
+            font-size: 15px;
+        }
+        h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2rem;
+      color: cyan;
+    }
+
+    .scroll-list__wrp {
+      width: 100%;
+      height: 700px;
+      overflow-y: auto;
+      padding: 50px;
+      box-shadow: 0px 7px 46px 0px rgba(0, 0, 0, 0.3);    
+      border-radius: 8px;
+      scroll-behavior: smooth;
+    }
+
+    .scroll-item {
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 1200px;
+      background-color: rgb(1, 1, 1);
+      border-radius: 12px;
+      transition: all 0.4s ease-in-out;
+      opacity: 0.8;
+      transform: scale(0.95);
+    }
+
+    .scroll-item.active {
+      opacity: 1;
+      transform: scale(1);
+      background-color: rgba(5, 5, 5, 0.896);
+      border-left: 5px solid cyan;
+    }
+
+    .scroll-item h2 {
+      margin-bottom: 10px;
+      color: #00d4ff;
+    }
+
+    .scroll-item p {
+      font-size: 15px;
+      color: white;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="mt-4" align="center">Welcome To AI Concepts</h1>
+    <!-- Carousel Section -->
+<div class="carousel-container">
+  <div id="conceptCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1: AI -->
+      <div class="carousel-item active">
+        <img src="files/ai.webp" class="d-block w-100" alt="AI">
+        <div class="carousel-caption">
+          <h1><u>ARTIFICIAL INTELLIGENCE</u></h1>
+          <h5>Machines with human-like abilities</h5>
+          <p>AI refers to machines designed to mimic human thinking, decision-making, and problem-solving skills.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2: ML -->
+      <div class="carousel-item">
+        <img src="files/ml1.jpg" class="d-block w-100" alt="Machine Learning">
+        <div class="carousel-caption">
+          <h1><u>MACHINE LEARNING</u></h1>
+          <h5>Learning from Data</h5>
+          <p>ML enables systems to learn patterns from data and improve their performance over time without explicit programming.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3: DL -->
+      <div class="carousel-item">
+        <img src="files/dl.webp" class="d-block w-100" alt="Deep Learning">
+        <div class="carousel-caption">
+          <h1><u>DEEP LEARNING</u></h1>
+          <h5>Multi-layered Neural Brains</h5>
+          <p>DL uses complex neural networks with many layers to understand intricate data like speech, images, and text.</p>
+        </div>
+      </div>
+
+      <!-- Slide 4: Neural Networks -->
+      <div class="carousel-item">
+        <img src="files/nn.jpg" class="d-block w-100" alt="Neural Networks">
+        <div class="carousel-caption">
+          <h1><u>NEURAL NETWORKS</u></h1>
+          <h5>The Brain of AI</h5>
+          <p>Neural networks simulate the way human brains process information, forming the foundation of DL and ML models.</p>
+        </div>
+      </div>
+
+      <!-- Slide 5: CNN -->
+      <div class="carousel-item">
+        <img src="files/cnn.png" class="d-block w-100" alt="CNN">
+        <div class="carousel-caption">
+          <h1><u>CONVOLUTIONAL NEURAL NETWORKS</u></h1>
+          <h5>AI Vision Experts</h5>
+          <p>CNNs are deep learning models designed to process and classify images, powering facial recognition, object detection, and more.</p>
+        </div>
+      </div>
+
+      <!-- Slide 6: Generative AI -->
+      <div class="carousel-item">
+        <img src="files/genai.webp" class="d-block w-100" alt="Generative AI">
+        <div class="carousel-caption">
+          <h1><u>GENERATIVE AI</u></h1>
+          <h5>Machines that Create</h5>
+          <p>Gen-AI models like ChatGPT, DALL·E, and MidJourney create new content—text, images, and music—mimicking creativity.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#conceptCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#conceptCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+<div class="scroll-list__wrp" id="scrollWrapper">
+  <div class="scroll-item"><h2>1. Introduction to AI</h2><p>Understand the basics of Artificial Intelligence and how it mimics human intelligence using machines.</p><a href="https://www.geeksforgeeks.org/artificial-intelligence/what-is-artificial-intelligence-ai/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>2. Supervised Learning</h2><p>Learn how models are trained using labeled data to predict outcomes or classify inputs accurately.</p><a href="https://www.geeksforgeeks.org/machine-learning/supervised-machine-learning/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>3. Unsupervised Learning</h2><p>Explore algorithms that identify hidden patterns in data without any labels or supervision.</p><a href="https://www.geeksforgeeks.org/machine-learning/unsupervised-learning/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>4. Reinforcement Learning</h2><p>Experience AI that learns via rewards and penalties while interacting with an environment.</p><a href="https://www.geeksforgeeks.org/machine-learning/what-is-reinforcement-learning/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>5. Machine Learning</h2><p>Dive into systems that improve performance on tasks by learning from data over time.</p><a href="https://www.geeksforgeeks.org/machine-learning/machine-learning/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>6. Deep Learning</h2><p>Discover layered neural networks that learn complex features from data like images or speech.</p><a href="https://www.geeksforgeeks.org/deep-learning/introduction-deep-learning/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>7. Neural Networks</h2><p>Understand models inspired by the brain that consist of interconnected layers to process data.</p><a href="https://www.geeksforgeeks.org/machine-learning/neural-networks-a-beginners-guide/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>8. Convolutional Neural Networks (CNN)</h2><p>Explore deep learning models specialized for analyzing visual data like images and videos.</p><a href="https://www.geeksforgeeks.org/machine-learning/introduction-convolution-neural-network/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>9. Generative AI</h2><p>Learn how AI generates new content—images, text, or music—by learning existing patterns.</p><a href="https://www.geeksforgeeks.org/artificial-intelligence/what-is-generative-ai/">SEE MORE</a></div>
+  <div class="scroll-item"><h2>10. Agentic AI</h2><p>Meet intelligent agents that act autonomously, make decisions, and complete complex tasks.</p><a href="https://www.geeksforgeeks.org/artificial-intelligence/what-is-agentic-ai/">SEE MORE</a></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.scroll-item').forEach(item => {
+    observer.observe(item);
+  });
+</script>
+
+</body>
+</html>
