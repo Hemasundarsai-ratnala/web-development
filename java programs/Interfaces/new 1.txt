@@ -1,0 +1,11 @@
+insert into Books(S_no,Book_ISBN_id,Book_Title,Publications,Author_Name)
+    -> values(1,'IBN00000234','Introduction To Algorithms','MIT Press','Cormen Leiserson,Rivest,Stein'),
+    -> (2,'IBN00000378','Computer Networks','Pearson Education','Andrew S, Tanenbaum'),
+    -> (3,'IBN00005378','Operating Systems Concepts','Wiley','Silberschatz, Galvin,Gagne'),
+    -> (4,'IBN00007654','Database Systems Concepts','McGraw Hill','Silberschatz, Korth, Sudharshan'),
+    -> (5,'IBN00006785','Object-Oriented Programming with C++','McGraw Hill','E. Balagurusamy'),
+    -> (6,'IBN00078960','Java: The Complete Reference','McGraw Hill Education','Herbert Schildt'),
+    -> (7,'IBN00098760','Artificial Intelligence: A Modern Approach','Pearson','Stuart Russell,Peter Norvig'),
+    -> (8,'IBN00098777','Data Structures and Algorithms in Java','Pearson','Robert Lafore'),
+    -> (9,'IBN00098898','Computer Organization and Design','Morgan Kaufmann','David A.Patterson,John L. Hennessy'),
+    -> (10,'IBN00098997','Computer Organization and Architecture','Morgan Kaufmann','David A.Patterson,John L. Hennessy');

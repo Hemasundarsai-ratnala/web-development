@@ -1,0 +1,8 @@
+ <Route path="/concepts" element={<Concepts />} />
+        <Route path="/tools" element={<Tools />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/about" element={<About />} />
